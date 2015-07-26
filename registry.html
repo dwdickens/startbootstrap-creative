@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Creative - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right navbar-inverse">
+                    <li>
+                        <a class="page-scroll" href="#works">How it works</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#started">Getting started</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="login.html">Login in</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <section class="bg-primary" id="newgift">
+        <div class="container-fluid">
+
+                <div class="col-lg-6 col-lg-offset-4 text-left">
+                    <h3 class="section-heading">New gift</h3>
+                    <hr class="light"><i class="fa fa-3x fa-gift wow bounceIn text-primary"></i>
+                    <p class="text-faded">Don't take our word for it, create a trial registry and see for yourself </p>
+
+
+                    <form class="form-horizontal" role="form">
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="newname">Name:</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="newname" placeholder="Name of your gift">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="newdescription">Description:</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="newdescription" placeholder="Optional">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                         <label class="control-label col-sm-2" for="exampleinputamount">Amount:</label>
+                          <div class="input-group col-sm-10">
+                            <div class="input-group-addon">$</div>
+
+                            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+
+                          </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="control-label col-sm-2" for="exampleinputamount">Type:</label>
+                           <div class="input-group col-sm-10">
+                      <label><input type="radio" name="newtype">Only one thanks</label>
+
+
+                    <div class="radio">
+                      <label><input type="radio" name="newtype">Up to</label>
+                      <div class="col-2"><input type="text" class="form-control" id="newqty" placeholder="2,3,4..."></div>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="newtype">Open gift (unlimited contributions)</label>
+                    </div>
+                  </div></div>
+
+                    <BR>
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-default">Create</button>
+                        </div>  </div>
+                      </div>
+                    </form>
+
+
+
+                </div>      </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Your registry</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+            <table class="table table-hover">
+            <thead>
+      <tr>
+        <th class="col-sm-3">Gift</th>
+        <th class="col-sm-3">Image</th>
+        <th class="col-sm-3">Purchasing</th>
+        <th class="col-sm-3">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Two sumo wrestling tickets</td>
+        <td><img src="img/sumo.jpg" class="img-responsive rounded" alt="Responsive image" style="width: 100%;"></td>
+        <td>$80 (one only)</td>
+        <td>Ready for purchase</td>
+      </tr>
+      <tr>
+        <td>Two sumo wrestling tickets</td>
+        <td>#</td>
+        <td>$80 (4 available)</td>
+        <td>2 purchased</td>
+      </tr>
+      <tr>
+        <td>Two sumo wrestling tickets</td>
+        <td>#</td>
+        <td>$80 (one only)</td>
+        <td>Ready for purchase</td>
+      </tr>
+    </tbody>
+</div>
+
+
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

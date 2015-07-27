@@ -38,18 +38,18 @@
                 </div>                 
                 <!-- Collect the nav links, forms, and other content for toggling -->                 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-                    <ul class="nav navbar-nav navbar-left navbar"> 
+                    <ul class="nav navbar-nav navbar-right navbar-inverse"> 
                         <li> 
-                            <a class="page-scroll" href="registry.html">Registry</a> 
+                            <a class="page-scroll" href="#works">How it works</a> 
                         </li>                         
                         <li> 
-                            <a class="page-scroll" href="settings.html">Settings</a> 
+                            <a class="page-scroll" href="#started">Getting started</a> 
                         </li>                         
                         <li> 
-                            <a class="page-scroll" href="viewpurchases.html">View purchases</a> 
+                            <a class="page-scroll" href="login.html">Login in</a> 
                         </li>                         
                         <li> 
-                            <a class="page-scroll" href="help.html">Help</a> 
+                            <a class="page-scroll" href="#about">About</a> 
                         </li>                         
                     </ul>                     
                 </div>                 
@@ -58,61 +58,61 @@
             <!-- /.container-fluid -->             
         </nav>         
         <section class="bg-primary" id="newgift"> 
-            <div class="container">
-                <div class="row">
-                    <h3>New gift</h3>
-                    <p class="text-faded bounceOutDown">Don't take our word for it, create a trial registry and see for yourself</p>
-                </div>
-                <div class="row">
-                    <form role="form" class="form-horizontal"> 
-                        <div class="form-group"> 
-                            <label class="control-label          col-sm-2" for="exampleInputEmail1">Name</label>                             
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name of your gift">
+            <div class="container-fluid"> 
+                <h3 class="section-heading">New gift</h3> 
+                <hr class="light">
+                <i class="fa fa-3x fa-gift wow bounceIn text-primary"></i> 
+                <p class="text-faded">Don't take our word for it, create a trial registry and see for yourself </p> 
+                <form class="form-horizontal" role="form"> 
+                    <div class="form-group"> 
+                        <label class="control-label col-sm-2" for="newname">Name:</label>                         
+                        <div class="col-sm-10"> 
+                            <input type="text" class="form-control" id="newname" placeholder="Name of your gift">                             
+                        </div>                         
+                    </div>                     
+                    <div class="form-group"> 
+                        <label class="control-label col-sm-2" for="newdescription">Description:</label>                         
+                        <div class="col-sm-10"> 
+                            <input type="text" class="form-control" id="newdescription" placeholder="Optional">                             
+                        </div>                         
+                    </div>                     
+                    <div class="form-group"> 
+                        <label class="control-label col-sm-2" for="exampleinputamount">Amount:</label>                         
+                        <div class="input-group col-sm-10"> 
+                            <div class="input-group-addon">$</div>                             
+                            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">                             
+                        </div>                         
+                    </div>                     
+                    <div class="form-group"> 
+                        <div class="radio"> 
+                            <label class="control-label col-sm-2" for="exampleinputamount">Type:</label>                             
+                            <div class="input-group col-sm-10"> 
+                                <label>
+                                    <input type="radio" name="newtype">                                                                                                            Only one thanks
+                                </label>                                 
                             </div>                             
                         </div>                         
-                        <div class="form-group"> 
-                            <label class="control-label          col-sm-2" for="exampleInputPassword1">Description
-                                <br>
-                            </label>                             
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            </div>                             
-                        </div>
-                        <div class="form-group"> 
-                            <label class="control-label  col-sm-2" for="formInput119">Amount</label>
-                            <div class="col-sm-10">
-                                <div class="input-group"> 
-                                    <span class="input-group-addon">$</span> 
-                                    <input type="text" class="form-control" placeholder="Amount" maxlength="8">
-                                </div>
-                            </div>
+                    </div>                     
+                    <div class="radio"> 
+                        <label>
+                            <input type="radio" name="newtype">                                                                                    Up to
+                        </label>                         
+                    </div>
+                    <div class="col-xs-2">
+                        <input type="text" class="form-control" id="newqty" placeholder="2,3,4...">
+                    </div>                     
+                    <div class="radio"> 
+                        <label>
+                            <input type="radio" name="newtype">                                                                                    Open gift (unlimited contributions)
+                        </label>                         
+                    </div>                     
+                    <BR> 
+                    <div class="form-group"> 
+                        <div class="col-sm-offset-2 col-sm-10"> 
+                            <button type="submit" class="btn btn-default">Create</button>                             
                         </div>                         
-                        <div class="form-group"> 
-                            <label class="control-label          col-sm-2" for="exampleInputFile">Type</label>                             
-                            <div class="col-sm-10">
-                                <label class="control-label"> 
-                                    <input type="radio" name="group" value="option1" checked="">                                                                                                                                                                                                                                                            &nbsp;Only one thanks &nbsp; &nbsp; &nbsp; &nbsp;
-                                </label>
-                                <p class="help-block">Perfect for toasters.</p>
-                                <label class="control-label"> 
-                                    <input type="radio" name="group" value="option1" checked="">                                                                                                                                                                                    &nbsp;Up to &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                                </label>
-                                <input type="text" class="form-control" placeholder="2, 4, 4...">
-                                <label class="control-label"> 
-                                    <input type="radio" name="group" value="option1" checked="">                                                                                                                                                                                            Open gift (unlimited contributions) &nbsp; &nbsp; &nbsp; &nbsp;
-                                </label>
-                            </div>                             
-                        </div>                         
-                        <div class="form-group">
-</div>                         
-                        <div class="form-group">
-                            <div class="  col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn">Submit</button>
-                            </div>
-                        </div>                         
-                    </form>
-                </div>
+                    </div>                     
+                    <div class="row pg-empty-placeholder"></div>
             </div>             
         </form>         
     </div>     

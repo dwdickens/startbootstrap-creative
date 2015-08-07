@@ -46,9 +46,6 @@
                             <a class="page-scroll" href="settings.html">Settings</a> 
                         </li>                         
                         <li> 
-                            <a class="page-scroll" href="invite.html">Invite guests</a> 
-                        </li>                         
-                        <li> 
                             <a class="page-scroll" href="viewpurchases.html">View purchases</a> 
                         </li>                         
                         <li> 
@@ -63,11 +60,12 @@
         <section class="bg-primary" id="newgift"> 
             <div class="container">
                 <div class="row">
-                    <h1>Settings</h1>
-                    <h3 style="display: block;">Your details</h3>
+                    <h3 style="display: block;">Settings</h3>
+                    <p class="text-faded bounceOutDown">Don't take our word for it, create a trial registry and see for yourself</p>
                 </div>
                 <form role="form"> 
                     <div class="form-group"> 
+                        <label class="control-label" for="exampleInputEmail1">Email address</label>                         
                         <div class="form-group"> 
                             <label class="control-label" for="formInput128">Celebration type</label>                             
                             <select id="formInput128" class="form-control"> 
@@ -77,13 +75,13 @@
                                 <option>Other celebration</option>                                 
                             </select>
                             <div class="row">
-                                <div class="col-lg-4 col-md-4 col-xs-6">
+                                <div class="col-md-6 col-lg-4">
                                     <h3>Bride</h3>
                                     <input type="text" class="form-control" placeholder="Bride first name">
                                     <input type="text" class="form-control" placeholder="Bride second name">
-                                    <input type="text" class="form-control" placeholder="Bride email address">                                     
+                                    <input type="text" class="form-control" placeholder="Bride email address">                                                                          
                                 </div>
-                                <div class="col-lg-4 col-xs-6 col-md-4">
+                                <div class="col-md-6 col-lg-4 col-lg-offset-6">
                                     <h3>Groom</h3>
                                     <input type="text" class="form-control" placeholder="Groom first name">
                                     <input type="text" class="form-control" placeholder="Groom second name">
@@ -91,28 +89,14 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <h2>Contact details</h2>
-                                <div class="col-md-4"> 
-                                    <input type="text" class="form-control" placeholder="Address">
-                                    <input type="text" class="form-control" placeholder="State">                                     
-                                </div>
-                                <div class="col-md-4"> 
-                                    <input type="text" class="form-control" placeholder="Suburb">
-                                    <input type="text" class="form-control" placeholder="Postcode">                                     
-                                </div>
-                            </div>
-                            <div class="row"></div>
-                            <div class="row col-md-4">
-                                <h3>Other information</h3>
+                                <h3>Heading 3</h3>
                                 <div class="form-group"> 
-                                    <label class="control-label" for="formInput160">Password (any person using an email address above can use this password)
-                                        <br>
-                                    </label>
-                                    <input type="text" class="form-control" id="formInput160" placeholder="Password">
+                                    <label class="control-label" for="formInput160">Field label</label>
+                                    <input type="text" class="form-control" id="formInput160" placeholder="Placeholder text">
                                 </div>
                                 <div class="form-group"> 
-                                    <label class="control-label" for="formInput155">Wedding date</label>
-                                    <input type="datetime" class="form-control" id="formInput155" placeholder="Wedding date">
+                                    <label class="control-label" for="formInput155">Field label</label>
+                                    <input type="text" class="form-control" id="formInput155" placeholder="Placeholder text">
                                 </div>
                             </div>
                         </div>                         
@@ -125,8 +109,11 @@
                         <p class="help-block">Example block-level help text here.</p> 
                     </div>                     
                     <div class="checkbox"> 
-</div>                     
-                    <button type="submit" class="btn">Save</button>                     
+                        <label class="control-label"> 
+                            <input type="checkbox">                                                         Check me out                        
+                        </label>                         
+                    </div>                     
+                    <button type="submit" class="btn">Submit</button>                     
                 </form>
             </div>             
         </form>         

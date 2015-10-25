@@ -24,9 +24,31 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script type="text/javascript">
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            if($(this).attr("value")=="red"){
+                $(".box").not(".red").hide();
+                $(".red").show();
+            }
+            else if($(this).attr("value")=="green"){
+                $(".box").not(".green").hide();
+                $(".green").show();
+            }
+            else if($(this).attr("value")=="blue"){
+                $(".box").not(".blue").hide();
+                $(".blue").show();
+            }
+            else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>        
     </head>
     <body id="page-top">
-
         <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -74,12 +96,12 @@
                             <div class="container-fluid    lead">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label class="control-label" for="CelebrationType">Celebration type</label>
-                                        <select id="CelebrationType" class="form-control">
-                                            <option value="wedding">Wedding</option>
-                                            <option value="birthday">Birthday</option>
-                                            <option value="engagement">Engagement</option>
-                                            <option value="other">Other celebration</option>
+                                        <label class="control-label" for="formInput128">Celebration type</label>
+                                        <select id="formInput128" class="form-control">
+                                            <option>Wedding</option>
+                                            <option>Birthday</option>
+                                            <option>Engagement</option>
+                                            <option>Other celebration</option>
                                         </select>
                                     </div>
                                 </div>
@@ -169,30 +191,3 @@
 <script src="js/wow.min.js"></script>
 <!-- Custom Theme JavaScript -->
 <script src="js/creative.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-
-$("select").change(function(){
-
-$(this).find("option:selected").each(function(){
-    if($(this).attr("value")=="wedding"){
-    //  alert("begin");
-        $(".RowWedding").show();
-        $(":RowBirthday").hide();
-        $(":RowSpecial").hide();
-    }
-    else if($(this).attr("value")=="green"){
-        $("").not(".green").hide();
-      //  $("").show();
-    }
-    else if($(this).attr("value")=="blue"){
-        $("").not(".blue").hide();
-      //  $("").show();
-    }
-    else{
-        $("").hide();
-    }
-});
-}).change();
-});
-</script>
